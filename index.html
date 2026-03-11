@@ -109,71 +109,39 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
   font-size: 0.9rem;
 }
 
-.ccr-btn-primary {
-  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4), 0 0 30px rgba(255, 0, 0, 0.1);
-}
-.ccr-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255, 0, 0, 0.6), 0 0 50px rgba(255, 0, 0, 0.2); }
-
-.ccr-btn-secondary {
-  background: transparent;
-  border: 2px solid var(--accent-yellow);
-  color: var(--accent-yellow);
-  text-shadow: 0 0 10px rgba(255, 251, 0, 0.3);
-}
-.ccr-btn-secondary:hover { background: rgba(255, 251, 0, 0.15); transform: translateY(-3px); box-shadow: 0 4px 20px rgba(255, 251, 0, 0.3); }
-
-.ccr-btn-accent {
-  background: linear-gradient(135deg, #fffb00 0%, #e6e200 100%);
-  color: #0e0450;
-  font-weight: 800;
-  box-shadow: 0 4px 15px rgba(255, 251, 0, 0.4);
-}
-.ccr-btn-accent:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255, 251, 0, 0.6); }
+.ccr-btn-primary { background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%); color: white; box-shadow: 0 4px 15px rgba(255,0,0,0.4), 0 0 30px rgba(255,0,0,0.1); }
+.ccr-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255,0,0,0.6), 0 0 50px rgba(255,0,0,0.2); }
+.ccr-btn-secondary { background: transparent; border: 2px solid var(--accent-yellow); color: var(--accent-yellow); text-shadow: 0 0 10px rgba(255,251,0,0.3); }
+.ccr-btn-secondary:hover { background: rgba(255,251,0,0.15); transform: translateY(-3px); box-shadow: 0 4px 20px rgba(255,251,0,0.3); }
+.ccr-btn-accent { background: linear-gradient(135deg, #fffb00 0%, #e6e200 100%); color: #0e0450; font-weight: 800; box-shadow: 0 4px 15px rgba(255,251,0,0.4); }
+.ccr-btn-accent:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255,251,0,0.6); }
 
 .ccr-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
 @keyframes pulse-blue {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79, 61, 224, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(79, 61, 224, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79, 61, 224, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79,61,224,0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(79,61,224,0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(79,61,224,0); }
 }
-
 @keyframes pulse-red {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(255, 0, 0, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255,0,0,0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(255,0,0,0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255,0,0,0); }
 }
 
-.ccr-live-dot {
-  width: 8px; height: 8px;
-  background: #ff0000;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 6px;
-  animation: pulse-red 2s infinite;
-}
+.ccr-live-dot { width: 8px; height: 8px; background: #ff0000; border-radius: 50%; display: inline-block; margin-right: 6px; animation: pulse-red 2s infinite; }
 .ccr-live-dot.active { background: #fffb00; animation: pulse-blue 2s infinite; }
 
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #0e0450; }
 ::-webkit-scrollbar-thumb { background: linear-gradient(#ff0000, #fffb00); border-radius: 10px; }
 
-/* Tabs for schedule */
+/* TABS PROGRAMACION */
 .tab-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 30px; justify-content: center; }
 .tab-btn {
-  padding: 8px 18px;
-  border-radius: 30px;
-  border: 2px solid rgba(107,92,231,0.4);
-  background: rgba(14,4,80,0.5);
-  color: #b8b0e8;
-  font-size: 0.8rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: var(--transition);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  padding: 8px 18px; border-radius: 30px; border: 2px solid rgba(107,92,231,0.4);
+  background: rgba(14,4,80,0.5); color: #b8b0e8; font-size: 0.8rem; font-weight: 700;
+  cursor: pointer; transition: var(--transition); text-transform: uppercase; letter-spacing: 0.5px;
 }
 .tab-btn:hover { border-color: #fffb00; color: #fffb00; }
 .tab-btn.active { background: linear-gradient(135deg, #ff0000, #cc0000); border-color: #ff0000; color: white; box-shadow: 0 4px 15px rgba(255,0,0,0.4); }
@@ -200,12 +168,11 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
 </style>
 
 <!-- HEADER -->
-<header class="ccr-glass" style="position: sticky; top: 10px; z-index: 1000; margin: 10px 15px; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff0000; box-shadow: 0 4px 30px rgba(14, 4, 80, 0.5), 0 0 60px rgba(42, 28, 184, 0.2); background: rgba(14, 4, 80, 0.7); backdrop-filter: blur(10px);">
+<header class="ccr-glass" style="position: sticky; top: 10px; z-index: 1000; margin: 10px 15px; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ff0000; box-shadow: 0 4px 30px rgba(14,4,80,0.5), 0 0 60px rgba(42,28,184,0.2); background: rgba(14,4,80,0.7); backdrop-filter: blur(10px);">
   <div class="ccr-logo-area" style="flex: 1;">
-    <h1 style="font-size: 1.0rem; color: #fffb00; margin: 0; letter-spacing: 1px; text-shadow: 0 0 20px rgba(255, 251, 0, 0.6), 0 0 40px rgba(255, 251, 0, 0.3);">De Barranquilla</h1>
+    <h1 style="font-size: 1.0rem; color: #fffb00; margin: 0; letter-spacing: 1px; text-shadow: 0 0 20px rgba(255,251,0,0.6), 0 0 40px rgba(255,251,0,0.3);">De Barranquilla</h1>
     <p style="font-size: 0.7rem; color: #ff4444; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; font-weight: 700;">Para el Mundo</p>
   </div>
-  
   <nav style="display: none; gap: 20px; flex: 2; justify-content: center;" class="nav-desktop">
     <a href="#" style="color: #fffb00; text-decoration: none; font-size: 0.9rem; font-weight: 600; border-bottom: 2px solid #ff0000;">Inicio</a>
     <a href="#programacion" style="color: white; text-decoration: none; font-size: 0.9rem;">Programación</a>
@@ -213,32 +180,13 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     <a href="#locutores" style="color: white; text-decoration: none; font-size: 0.9rem;">Locutores</a>
     <a href="#contacto" style="color: white; text-decoration: none; font-size: 0.9rem;">Contacto</a>
   </nav>
-  
   <div style="flex: 1; display: flex; justify-content: flex-end;">
     <button class="ccr-btn ccr-btn-accent" style="padding: 5px 12px; font-size: 0.7rem; min-width: 90px;" id="listen-button">🎧 ESCUCHAR</button>
   </div>
-  
   <style>
-    @media (min-width: 768px) {
-      .nav-desktop { display: flex !important; }
-      header { padding: 15px 30px; margin: 10px 20px; }
-      .ccr-logo-area h1 { font-size: 1.5rem; }
-      .ccr-logo-area p { font-size: 0.8rem; }
-      nav a:hover { color: #fffb00 !important; text-shadow: 0 0 10px rgba(255,251,0,0.5); }
-    }
-    @media (max-width: 767px) {
-      header { padding: 12px 15px; margin: 10px; flex-direction: row; align-items: center; }
-      .ccr-logo-area { flex: 1; text-align: left; }
-      .ccr-logo-area h1 { font-size: 1.2rem; margin-bottom: 2px; line-height: 1.2; }
-      .ccr-logo-area p { font-size: 0.65rem; line-height: 1.2; }
-      #listen-button { padding: 6px 10px; font-size: 0.65rem; min-width: 80px; }
-    }
-    @media (max-width: 480px) {
-      header { padding: 10px 12px; margin: 8px; }
-      .ccr-logo-area h1 { font-size: 1.1rem; }
-      .ccr-logo-area p { font-size: 0.6rem; }
-      #listen-button { padding: 5px 8px; font-size: 0.6rem; min-width: 70px; }
-    }
+    @media (min-width: 768px) { .nav-desktop { display: flex !important; } header { padding: 15px 30px; margin: 10px 20px; } .ccr-logo-area h1 { font-size: 1.5rem; } .ccr-logo-area p { font-size: 0.8rem; } nav a:hover { color: #fffb00 !important; text-shadow: 0 0 10px rgba(255,251,0,0.5); } }
+    @media (max-width: 767px) { header { padding: 12px 15px; margin: 10px; flex-direction: row; align-items: center; } .ccr-logo-area { flex: 1; text-align: left; } .ccr-logo-area h1 { font-size: 1.2rem; margin-bottom: 2px; line-height: 1.2; } .ccr-logo-area p { font-size: 0.65rem; line-height: 1.2; } #listen-button { padding: 6px 10px; font-size: 0.65rem; min-width: 80px; } }
+    @media (max-width: 480px) { header { padding: 10px 12px; margin: 8px; } .ccr-logo-area h1 { font-size: 1.1rem; } .ccr-logo-area p { font-size: 0.6rem; } #listen-button { padding: 5px 8px; font-size: 0.6rem; min-width: 70px; } }
   </style>
 </header>
 
@@ -246,15 +194,14 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
 <section class="ccr-section" style="min-height: 70vh; display: flex; align-items: center; position: relative; overflow: hidden;">
   <div class="slider-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
     <div class="slider-wrapper" style="width: 100%; height: 100%; display: flex; transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);">
-      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42, 28, 184, 0.75), rgba(14, 4, 80, 0.85)), url('https://i.pinimg.com/736x/38/4d/0d/384d0d79829d8ff98004915ba1063954.jpg') center/cover;"></div>
-      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42, 28, 184, 0.75), rgba(14, 4, 80, 0.85)), url('https://i.pinimg.com/1200x/2d/04/c5/2d04c542087ffe03bab905858ca23444.jpg') center/cover;"></div>
-      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42, 28, 184, 0.75), rgba(14, 4, 80, 0.85)), url('https://i.pinimg.com/736x/88/85/67/888567593a41f874139ada8f389c8c1a.jpg') center/cover;"></div>
-      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42, 28, 184, 0.75), rgba(14, 4, 80, 0.85)), url('https://i.pinimg.com/736x/8a/b0/61/8ab0613a17fb2ade6de5d828aa3000e0.jpg') center/cover;"></div>
-      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42, 28, 184, 0.75), rgba(14, 4, 80, 0.85)), url('https://i.pinimg.com/1200x/8a/c0/32/8ac032dc8183436e461b0903a0521b10.jpg') center/cover;"></div>
-      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42, 28, 184, 0.75), rgba(14, 4, 80, 0.85)), url('https://i.pinimg.com/736x/f9/cd/aa/f9cdaafa6b7dd4cdf0394e245f70c25d.jpg') center/cover;"></div>
+      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42,28,184,0.75), rgba(14,4,80,0.85)), url('https://i.pinimg.com/736x/38/4d/0d/384d0d79829d8ff98004915ba1063954.jpg') center/cover;"></div>
+      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42,28,184,0.75), rgba(14,4,80,0.85)), url('https://i.pinimg.com/1200x/2d/04/c5/2d04c542087ffe03bab905858ca23444.jpg') center/cover;"></div>
+      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42,28,184,0.75), rgba(14,4,80,0.85)), url('https://i.pinimg.com/736x/88/85/67/888567593a41f874139ada8f389c8c1a.jpg') center/cover;"></div>
+      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42,28,184,0.75), rgba(14,4,80,0.85)), url('https://i.pinimg.com/736x/8a/b0/61/8ab0613a17fb2ade6de5d828aa3000e0.jpg') center/cover;"></div>
+      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42,28,184,0.75), rgba(14,4,80,0.85)), url('https://i.pinimg.com/1200x/8a/c0/32/8ac032dc8183436e461b0903a0521b10.jpg') center/cover;"></div>
+      <div class="slide" style="min-width: 100%; height: 100%; background: linear-gradient(135deg, rgba(42,28,184,0.75), rgba(14,4,80,0.85)), url('https://i.pinimg.com/736x/f9/cd/aa/f9cdaafa6b7dd4cdf0394e245f70c25d.jpg') center/cover;"></div>
     </div>
   </div>
-  
   <div class="slider-controls" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 2;">
     <button class="slider-dot active" style="width: 12px; height: 12px; border-radius: 50%; background: #ff0000; border: 2px solid #ff4444; cursor: pointer; box-shadow: 0 0 10px rgba(255,0,0,0.5);"></button>
     <button class="slider-dot" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(107,92,231,0.5); border: 2px solid rgba(107,92,231,0.3); cursor: pointer;"></button>
@@ -263,7 +210,6 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     <button class="slider-dot" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(107,92,231,0.5); border: 2px solid rgba(107,92,231,0.3); cursor: pointer;"></button>
     <button class="slider-dot" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(107,92,231,0.5); border: 2px solid rgba(107,92,231,0.3); cursor: pointer;"></button>
   </div>
-  
   <div class="ccr-container" style="position: relative; z-index: 2;">
     <div style="max-width: 700px;">
       <div style="display: inline-flex; align-items: center; background: rgba(255,0,0,0.2); padding: 5px 12px; border-radius: 20px; margin-bottom: 15px; border: 1px solid rgba(255,0,0,0.5); box-shadow: 0 0 20px rgba(255,0,0,0.2);">
@@ -280,13 +226,12 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
   </div>
 </section>
 
-<!-- PROGRAMACIÓN -->
+<!-- PROGRAMACIÓN CON TABS -->
 <section id="programacion" class="ccr-section" style="position: relative; overflow: hidden; background: linear-gradient(180deg, rgba(42,28,184,0.3) 0%, rgba(14,4,80,0.5) 100%);">
   <div class="ccr-container">
     <h2 class="ccr-title" style="text-align: center;">Programación</h2>
     <p style="text-align: center; color: #b8b0e8; margin-bottom: 30px;">Sintoniza nuestros bloques estelares</p>
-    
-    <!-- Tab Buttons -->
+
     <div class="tab-buttons">
       <button class="tab-btn active" data-tab="lv">Lunes a Viernes</button>
       <button class="tab-btn" data-tab="sabado">Sábados</button>
@@ -296,155 +241,44 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
 
     <!-- LUNES A VIERNES -->
     <div class="tab-content active" id="tab-lv">
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">5:00 – 6:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">He Decidido Seguir a Cristo</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Espacio de reflexión y fe para comenzar el día con esperanza.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">6:00 – 8:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Música Variada</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">El mejor acompañamiento musical para iniciar tu mañana.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">8:00 – 10:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Románticas con Color Caribe Radio</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Música para despertar bellos sentimientos con las mejores baladas.</p>
-        <div style="margin-top: 10px; color: #fffb00; font-size: 0.75rem; font-weight: 600;">1ª Edición</div>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">10:00 – 11:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Radio Revista Musical e Informativa</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Color Caribe Radio te informa y entretiene con lo mejor.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">11:00 a.m. – 12:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Boleros y Baladas</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Los clásicos del amor que nunca pasan de moda.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">12:00 – 2:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Románticas con Color Caribe Radio</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Continuamos con más música romántica y contenido especial.</p>
-        <div style="margin-top: 10px; color: #fffb00; font-size: 0.75rem; font-weight: 600;">2ª Edición</div>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">2:00 – 4:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">SalsaVallenateando</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Salsa y Vallenato, sabor y sentimiento para acompañar tus tardes.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">4:00 – 6:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Vallenateando con Color Caribe</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Con lo mejor de los Aires Vallenatos, pura tradición caribeña.</p>
-      </div>
-      <!-- Especiales Miércoles -->
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; border: 2px dashed rgba(255,0,0,0.4); box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">10:00 a.m. – 12:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Especiales con Color Caribe Radio</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Programación especial con los mejores contenidos.</p>
-        <div style="margin-top: 10px; color: #fffb00; font-size: 0.75rem; font-weight: 600;">⭐ Solo los Miércoles</div>
-      </div>
-      <!-- Especiales Viernes -->
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; border: 2px dashed rgba(255,251,0,0.4); box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">10:00 a.m. – 12:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Salsa de Estadero</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">La mejor salsa para cerrar la semana con sabor y alegría.</p>
-        <div style="margin-top: 10px; color: #fffb00; font-size: 0.75rem; font-weight: 600;">⭐ Solo los Viernes</div>
-      </div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">5:00 – 6:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">He Decidido Seguir a Cristo</h3><p style="color:#b8b0e8;font-size:0.85rem;">Espacio de reflexión y fe para comenzar el día con esperanza.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">6:00 – 8:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Música Variada</h3><p style="color:#b8b0e8;font-size:0.85rem;">El mejor acompañamiento musical para iniciar tu mañana.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">8:00 – 10:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Románticas con Color Caribe Radio</h3><p style="color:#b8b0e8;font-size:0.85rem;">Música para despertar bellos sentimientos con las mejores baladas.</p><div style="margin-top:10px;color:#fffb00;font-size:0.75rem;font-weight:600;">1ª Edición</div></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">10:00 – 11:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Radio Revista Musical e Informativa</h3><p style="color:#b8b0e8;font-size:0.85rem;">Color Caribe Radio te informa y entretiene con lo mejor.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">11:00 a.m. – 12:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Boleros y Baladas</h3><p style="color:#b8b0e8;font-size:0.85rem;">Los clásicos del amor que nunca pasan de moda.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">12:00 – 2:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Románticas con Color Caribe Radio</h3><p style="color:#b8b0e8;font-size:0.85rem;">Continuamos con más música romántica y contenido especial.</p><div style="margin-top:10px;color:#fffb00;font-size:0.75rem;font-weight:600;">2ª Edición</div></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">2:00 – 4:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">SalsaVallenateando</h3><p style="color:#b8b0e8;font-size:0.85rem;">Salsa y Vallenato, sabor y sentimiento para acompañar tus tardes.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">4:00 – 6:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Vallenateando con Color Caribe</h3><p style="color:#b8b0e8;font-size:0.85rem;">Con lo mejor de los Aires Vallenatos, pura tradición caribeña.</p></div>
+      <div class="ccr-glass" style="padding:20px;border:2px dashed rgba(255,0,0,0.5);border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">10:00 a.m. – 12:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Especiales con Color Caribe Radio</h3><p style="color:#b8b0e8;font-size:0.85rem;">Programación especial con los mejores contenidos.</p><div style="margin-top:10px;color:#fffb00;font-size:0.75rem;font-weight:600;">⭐ Solo los Miércoles</div></div>
+      <div class="ccr-glass" style="padding:20px;border:2px dashed rgba(255,251,0,0.5);border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">10:00 a.m. – 12:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Salsa de Estadero</h3><p style="color:#b8b0e8;font-size:0.85rem;">La mejor salsa para cerrar la semana con sabor y alegría.</p><div style="margin-top:10px;color:#fffb00;font-size:0.75rem;font-weight:600;">⭐ Solo los Viernes</div></div>
     </div>
 
     <!-- SÁBADOS -->
     <div class="tab-content" id="tab-sabado">
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">5:00 – 6:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">He Decidido Seguir a Cristo</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Espacio de reflexión y fe para comenzar el día con esperanza.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">6:00 – 8:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Música Variada</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">El mejor acompañamiento musical para tu sábado.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">8:00 – 10:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Románticas con Color Caribe Radio</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Las mejores baladas románticas para tu mañana del sábado.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">10:00 – 11:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Radio Revista Musical e Informativa</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Color Caribe Radio te informa y entretiene con lo mejor.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">11:00 a.m. – 1:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">SalsaVallenateando</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Salsa y Vallenato para animar tu sábado con sabor.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">1:00 – 4:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Música Variada</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Una tarde de sábado con lo mejor de nuestra música.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">4:00 – 6:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Vallenateando</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Pura tradición caribeña para cerrar el sábado con sabor.</p>
-      </div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">5:00 – 6:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">He Decidido Seguir a Cristo</h3><p style="color:#b8b0e8;font-size:0.85rem;">Espacio de reflexión y fe para comenzar el día con esperanza.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">6:00 – 8:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Música Variada</h3><p style="color:#b8b0e8;font-size:0.85rem;">El mejor acompañamiento musical para tu sábado.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">8:00 – 10:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Románticas con Color Caribe Radio</h3><p style="color:#b8b0e8;font-size:0.85rem;">Las mejores baladas románticas para tu mañana del sábado.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">10:00 – 11:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Radio Revista Musical e Informativa</h3><p style="color:#b8b0e8;font-size:0.85rem;">Color Caribe Radio te informa y entretiene con lo mejor.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">11:00 a.m. – 1:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">SalsaVallenateando</h3><p style="color:#b8b0e8;font-size:0.85rem;">Salsa y Vallenato para animar tu sábado con sabor.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">1:00 – 4:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Música Variada</h3><p style="color:#b8b0e8;font-size:0.85rem;">Una tarde de sábado con lo mejor de nuestra música.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">4:00 – 6:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Vallenateando</h3><p style="color:#b8b0e8;font-size:0.85rem;">Pura tradición caribeña para cerrar el sábado con sabor.</p></div>
     </div>
 
     <!-- DOMINGOS -->
     <div class="tab-content" id="tab-domingo">
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">5:00 – 6:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">He Decidido Seguir a Cristo</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Espacio de reflexión y fe para tu domingo.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">6:00 – 8:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Reminiscencias de Oro</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Los grandes éxitos de siempre para despertar en domingo.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">8:00 – 10:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">SalsaVallenateando</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Salsa y Vallenato para encender tu domingo desde temprano.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">10:00 – 11:00 a.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Radio Revista Musical e Informativa</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Color Caribe Radio te informa y entretiene con lo mejor.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">11:00 a.m. – 1:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Coctel Musical</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Una mezcla especial de géneros para el mejor de los domingos.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">1:00 – 3:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">La Candela</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">¡Fuego puro! La música más caliente para tu tarde dominical.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
-        <div style="color: #fffb00; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">3:00 – 5:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Vallenateando con Color Caribe Radio</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">Tradición vallenata en la tarde del domingo.</p>
-      </div>
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <div style="color: #6b5ce7; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">5:00 – 7:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Wantuki Connection</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">El cierre perfecto para tu domingo con Color Caribe Radio.</p>
-      </div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">5:00 – 6:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">He Decidido Seguir a Cristo</h3><p style="color:#b8b0e8;font-size:0.85rem;">Espacio de reflexión y fe para tu domingo.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">6:00 – 8:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Reminiscencias de Oro</h3><p style="color:#b8b0e8;font-size:0.85rem;">Los grandes éxitos de siempre para despertar en domingo.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">8:00 – 10:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">SalsaVallenateando</h3><p style="color:#b8b0e8;font-size:0.85rem;">Salsa y Vallenato para encender tu domingo desde temprano.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">10:00 – 11:00 a.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Radio Revista Musical e Informativa</h3><p style="color:#b8b0e8;font-size:0.85rem;">Color Caribe Radio te informa y entretiene con lo mejor.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">11:00 a.m. – 1:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Coctel Musical</h3><p style="color:#b8b0e8;font-size:0.85rem;">Una mezcla especial de géneros para el mejor de los domingos.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">1:00 – 3:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">La Candela</h3><p style="color:#b8b0e8;font-size:0.85rem;">¡Fuego puro! La música más caliente para tu tarde dominical.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #fffb00;"><div style="color:#fffb00;font-weight:800;margin-bottom:8px;font-size:0.9rem;">3:00 – 5:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Vallenateando con Color Caribe Radio</h3><p style="color:#b8b0e8;font-size:0.85rem;">Tradición vallenata en la tarde del domingo.</p></div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #6b5ce7;"><div style="color:#6b5ce7;font-weight:800;margin-bottom:8px;font-size:0.9rem;">5:00 – 7:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Wantuki Connection</h3><p style="color:#b8b0e8;font-size:0.85rem;">El cierre perfecto para tu domingo con Color Caribe Radio.</p></div>
     </div>
 
     <!-- FESTIVOS -->
     <div class="tab-content" id="tab-festivos">
-      <div class="ccr-glass" style="padding: 20px; border-top: 4px solid #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1); grid-column: 1 / -1;">
-        <div style="color: #ff4444; font-weight: 800; margin-bottom: 8px; font-size: 0.9rem;">11:00 a.m. – 1:00 p.m.</div>
-        <h3 style="margin-bottom: 10px; font-size: 1.1rem; color: white;">Programando con Los Oyentes</h3>
-        <p style="color: #b8b0e8; font-size: 0.85rem;">¡Tú decides la música! Participa a través de nuestras redes sociales y elige lo que suena en Color Caribe Radio.</p>
-        <div style="margin-top: 10px; color: #fffb00; font-size: 0.75rem; font-weight: 600;">🎉 Días Festivos</div>
-      </div>
+      <div class="ccr-glass" style="padding:20px;border-top:4px solid #ff0000;grid-column:1/-1;"><div style="color:#ff4444;font-weight:800;margin-bottom:8px;font-size:0.9rem;">11:00 a.m. – 1:00 p.m.</div><h3 style="margin-bottom:10px;font-size:1.1rem;color:white;">Programando con Los Oyentes</h3><p style="color:#b8b0e8;font-size:0.85rem;">¡Tú decides la música! Participa a través de nuestras redes sociales y elige lo que suena en Color Caribe Radio.</p><div style="margin-top:10px;color:#fffb00;font-size:0.75rem;font-weight:600;">🎉 Días Festivos</div></div>
     </div>
   </div>
 </section>
@@ -486,22 +320,20 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
         <h4 style="font-size: 1.1rem; color: #ff4444;">Rodrigo Consuegra A.</h4>
         <p style="color: #b8b0e8; font-size: 0.75rem;">Locutor</p>
       </div>
-
-      <!-- LOCUTOR 3 PLACEHOLDER -->
+      <!-- PLACEHOLDER 3 -->
       <div style="text-align: center; width: 160px;">
-        <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px dashed rgba(107,92,231,0.7); margin: 0 auto 15px; overflow: hidden; transition: var(--transition); background: rgba(42,28,184,0.25); box-shadow: 0 0 20px rgba(107,92,231,0.15); display: flex; align-items: center; justify-content: center; flex-direction: column;" class="locutor-img">
-          <div style="font-size: 2.2rem; opacity: 0.5; line-height:1;">👤</div>
-          <div style="font-size: 0.55rem; color: #b8b0e8; margin-top: 5px; opacity: 0.7; text-align:center; padding: 0 8px;">Foto pendiente</div>
+        <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px dashed rgba(107,92,231,0.7); margin: 0 auto 15px; background: rgba(42,28,184,0.25); display: flex; align-items: center; justify-content: center; flex-direction: column;" class="locutor-img">
+          <div style="font-size: 2.2rem; opacity: 0.5;">👤</div>
+          <div style="font-size: 0.55rem; color: #b8b0e8; margin-top: 5px; opacity: 0.7;">Foto pendiente</div>
         </div>
         <h4 style="font-size: 1rem; color: #6b5ce7;">Nombre Completo</h4>
         <p style="color: #b8b0e8; font-size: 0.75rem;">Locutor / Cargo</p>
       </div>
-
-      <!-- LOCUTOR 4 PLACEHOLDER -->
+      <!-- PLACEHOLDER 4 -->
       <div style="text-align: center; width: 160px;">
-        <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px dashed rgba(255,251,0,0.5); margin: 0 auto 15px; overflow: hidden; transition: var(--transition); background: rgba(42,28,184,0.25); box-shadow: 0 0 20px rgba(255,251,0,0.1); display: flex; align-items: center; justify-content: center; flex-direction: column;" class="locutor-img">
-          <div style="font-size: 2.2rem; opacity: 0.5; line-height:1;">👤</div>
-          <div style="font-size: 0.55rem; color: #b8b0e8; margin-top: 5px; opacity: 0.7; text-align:center; padding: 0 8px;">Foto pendiente</div>
+        <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px dashed rgba(255,251,0,0.5); margin: 0 auto 15px; background: rgba(42,28,184,0.25); display: flex; align-items: center; justify-content: center; flex-direction: column;" class="locutor-img">
+          <div style="font-size: 2.2rem; opacity: 0.5;">👤</div>
+          <div style="font-size: 0.55rem; color: #b8b0e8; margin-top: 5px; opacity: 0.7;">Foto pendiente</div>
         </div>
         <h4 style="font-size: 1rem; color: #fffb00;">Nombre Completo</h4>
         <p style="color: #b8b0e8; font-size: 0.75rem;">Locutor / Cargo</p>
@@ -509,13 +341,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     </div>
   </div>
   <style>
-    @media (min-width: 768px) {
-      #locutores .ccr-container > div { gap: 40px; margin-top: 50px; }
-      #locutores .ccr-container > div > div { width: 200px; }
-      .locutor-img { width: 150px !important; height: 150px !important; border-width: 4px !important; margin: 0 auto 20px !important; }
-      #locutores h4 { font-size: 1.25rem; }
-      #locutores p { font-size: 0.8rem; }
-    }
+    @media (min-width: 768px) { #locutores .ccr-container > div { gap: 40px; margin-top: 50px; } #locutores .ccr-container > div > div { width: 200px; } .locutor-img { width: 150px !important; height: 150px !important; border-width: 4px !important; margin: 0 auto 20px !important; } #locutores h4 { font-size: 1.25rem; } #locutores p { font-size: 0.8rem; } }
     .locutor-img:hover { transform: scale(1.1); box-shadow: 0 0 40px rgba(255,0,0,0.5), 0 0 80px rgba(42,28,184,0.3) !important; }
   </style>
 </section>
@@ -526,72 +352,32 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
       <h2 class="ccr-title" style="margin-bottom: 0; font-size: 1.3rem;">Publicidad &amp; Anuncios</h2>
       <div style="display: flex; gap: 8px;">
-        <button id="pub-prev" style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,251,0,0.5); background: rgba(14,4,80,0.7); color: #fffb00; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: var(--transition);">&#8249;</button>
-        <button id="pub-next" style="width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(255,251,0,0.5); background: rgba(14,4,80,0.7); color: #fffb00; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: var(--transition);">&#8250;</button>
+        <button id="pub-prev" style="width:34px;height:34px;border-radius:50%;border:2px solid rgba(255,251,0,0.5);background:rgba(14,4,80,0.7);color:#fffb00;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;">&#8249;</button>
+        <button id="pub-next" style="width:34px;height:34px;border-radius:50%;border:2px solid rgba(255,251,0,0.5);background:rgba(14,4,80,0.7);color:#fffb00;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;">&#8250;</button>
       </div>
     </div>
-
-    <div style="position: relative; overflow: hidden; border-radius: 16px; border: 1px solid rgba(107,92,231,0.4); box-shadow: 0 4px 30px rgba(14,4,80,0.5);">
-      <div id="pub-slider-wrapper" style="display: flex; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);">
-
-        <div style="min-width:100%; height:200px; background: linear-gradient(135deg, rgba(42,28,184,0.85), rgba(14,4,80,0.95)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80') center/cover; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; text-align:center; padding:20px;">
-          <div style="font-size:2.5rem;">📢</div>
-          <div style="font-size:1.1rem; font-weight:800; color:#fffb00; text-transform:uppercase; letter-spacing:1px;">Tu Anuncio Aquí</div>
-          <div style="font-size:0.8rem; color:#b8b0e8;">Espacio publicitario disponible · Llámanos ahora</div>
-          <div style="margin-top:5px; background:rgba(255,0,0,0.3); border:1px solid rgba(255,0,0,0.6); padding:4px 14px; border-radius:20px; font-size:0.75rem; color:#ff4444; font-weight:700;">PUBLICIDAD 1</div>
-        </div>
-
-        <div style="min-width:100%; height:200px; background: linear-gradient(135deg, rgba(255,0,0,0.2), rgba(14,4,80,0.9)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80') center/cover; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; text-align:center; padding:20px;">
-          <div style="font-size:2.5rem;">🎵</div>
-          <div style="font-size:1.1rem; font-weight:800; color:#ff4444; text-transform:uppercase; letter-spacing:1px;">Anúnciate en Color Caribe</div>
-          <div style="font-size:0.8rem; color:#b8b0e8;">Llega a miles de oyentes en todo el Caribe</div>
-          <div style="margin-top:5px; background:rgba(255,251,0,0.2); border:1px solid rgba(255,251,0,0.5); padding:4px 14px; border-radius:20px; font-size:0.75rem; color:#fffb00; font-weight:700;">PUBLICIDAD 2</div>
-        </div>
-
-        <div style="min-width:100%; height:200px; background: linear-gradient(135deg, rgba(107,92,231,0.3), rgba(14,4,80,0.9)), url('https://images.unsplash.com/photo-1429514513361-8fa32282fd5f?auto=format&fit=crop&w=1200&q=80') center/cover; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; text-align:center; padding:20px;">
-          <div style="font-size:2.5rem;">🌴</div>
-          <div style="font-size:1.1rem; font-weight:800; color:#6b5ce7; text-transform:uppercase; letter-spacing:1px;">Espacio Disponible</div>
-          <div style="font-size:0.8rem; color:#b8b0e8;">Contacta al +57 301 707 5161 para más info</div>
-          <div style="margin-top:5px; background:rgba(107,92,231,0.3); border:1px solid rgba(107,92,231,0.6); padding:4px 14px; border-radius:20px; font-size:0.75rem; color:#6b5ce7; font-weight:700;">PUBLICIDAD 3</div>
-        </div>
-
-        <div style="min-width:100%; height:200px; background: linear-gradient(135deg, rgba(255,251,0,0.15), rgba(14,4,80,0.9)), url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80') center/cover; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; text-align:center; padding:20px;">
-          <div style="font-size:2.5rem;">📻</div>
-          <div style="font-size:1.1rem; font-weight:800; color:#fffb00; text-transform:uppercase; letter-spacing:1px;">Tu Marca Suena Aquí</div>
-          <div style="font-size:0.8rem; color:#b8b0e8;">Radio online · 24 horas al día · 7 días a la semana</div>
-          <div style="margin-top:5px; background:rgba(255,0,0,0.3); border:1px solid rgba(255,0,0,0.6); padding:4px 14px; border-radius:20px; font-size:0.75rem; color:#ff4444; font-weight:700;">PUBLICIDAD 4</div>
-        </div>
+    <div style="position:relative;overflow:hidden;border-radius:16px;border:1px solid rgba(107,92,231,0.4);box-shadow:0 4px 30px rgba(14,4,80,0.5);">
+      <div id="pub-slider-wrapper" style="display:flex;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);">
+        <div style="min-width:100%;height:200px;background:linear-gradient(135deg,rgba(42,28,184,0.85),rgba(14,4,80,0.95));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;padding:20px;"><div style="font-size:2.5rem;">📢</div><div style="font-size:1.1rem;font-weight:800;color:#fffb00;text-transform:uppercase;">Tu Anuncio Aquí</div><div style="font-size:0.8rem;color:#b8b0e8;">Espacio publicitario disponible · Llámanos ahora</div><div style="background:rgba(255,0,0,0.3);border:1px solid rgba(255,0,0,0.6);padding:4px 14px;border-radius:20px;font-size:0.75rem;color:#ff4444;font-weight:700;">PUBLICIDAD 1</div></div>
+        <div style="min-width:100%;height:200px;background:linear-gradient(135deg,rgba(255,0,0,0.2),rgba(14,4,80,0.9));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;padding:20px;"><div style="font-size:2.5rem;">🎵</div><div style="font-size:1.1rem;font-weight:800;color:#ff4444;text-transform:uppercase;">Anúnciate en Color Caribe</div><div style="font-size:0.8rem;color:#b8b0e8;">Llega a miles de oyentes en todo el Caribe</div><div style="background:rgba(255,251,0,0.2);border:1px solid rgba(255,251,0,0.5);padding:4px 14px;border-radius:20px;font-size:0.75rem;color:#fffb00;font-weight:700;">PUBLICIDAD 2</div></div>
+        <div style="min-width:100%;height:200px;background:linear-gradient(135deg,rgba(107,92,231,0.3),rgba(14,4,80,0.9));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;padding:20px;"><div style="font-size:2.5rem;">🌴</div><div style="font-size:1.1rem;font-weight:800;color:#6b5ce7;text-transform:uppercase;">Espacio Disponible</div><div style="font-size:0.8rem;color:#b8b0e8;">Contacta al +57 301 707 5161 para más info</div><div style="background:rgba(107,92,231,0.3);border:1px solid rgba(107,92,231,0.6);padding:4px 14px;border-radius:20px;font-size:0.75rem;color:#6b5ce7;font-weight:700;">PUBLICIDAD 3</div></div>
+        <div style="min-width:100%;height:200px;background:linear-gradient(135deg,rgba(255,251,0,0.15),rgba(14,4,80,0.9));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;text-align:center;padding:20px;"><div style="font-size:2.5rem;">📻</div><div style="font-size:1.1rem;font-weight:800;color:#fffb00;text-transform:uppercase;">Tu Marca Suena Aquí</div><div style="font-size:0.8rem;color:#b8b0e8;">Radio online · 24 horas · 7 días a la semana</div><div style="background:rgba(255,0,0,0.3);border:1px solid rgba(255,0,0,0.6);padding:4px 14px;border-radius:20px;font-size:0.75rem;color:#ff4444;font-weight:700;">PUBLICIDAD 4</div></div>
       </div>
-
-      <div style="position:absolute; bottom:10px; left:50%; transform:translateX(-50%); display:flex; gap:6px;" id="pub-dots">
-        <div class="pub-dot" style="width:8px; height:8px; border-radius:50%; background:#ff0000; cursor:pointer; transition:var(--transition);"></div>
-        <div class="pub-dot" style="width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,0.3); cursor:pointer; transition:var(--transition);"></div>
-        <div class="pub-dot" style="width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,0.3); cursor:pointer; transition:var(--transition);"></div>
-        <div class="pub-dot" style="width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,0.3); cursor:pointer; transition:var(--transition);"></div>
+      <div style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;" id="pub-dots">
+        <div class="pub-dot" style="width:8px;height:8px;border-radius:50%;background:#ff0000;cursor:pointer;"></div>
+        <div class="pub-dot" style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);cursor:pointer;"></div>
+        <div class="pub-dot" style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);cursor:pointer;"></div>
+        <div class="pub-dot" style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);cursor:pointer;"></div>
       </div>
     </div>
-    <p style="text-align:center; color:#b8b0e8; font-size:0.75rem; margin-top:10px;">📞 Contáctanos para publicitar tu negocio · +57 301 707 5161</p>
+    <p style="text-align:center;color:#b8b0e8;font-size:0.75rem;margin-top:10px;">📞 Contáctanos · +57 301 707 5161</p>
   </div>
-
-  <script>
-  (function(){
-    var pubIdx = 0, pubTotal = 4;
-    var wrap = document.getElementById('pub-slider-wrapper');
-    var dots = document.querySelectorAll('.pub-dot');
-    function goP(i){ if(i>=pubTotal)i=0; if(i<0)i=pubTotal-1; pubIdx=i; wrap.style.transform='translateX(-'+(pubIdx*100)+'%)'; dots.forEach(function(d,j){d.style.background=j===pubIdx?'#ff0000':'rgba(255,255,255,0.3)';}); }
-    document.getElementById('pub-prev').onclick=function(){goP(pubIdx-1);};
-    document.getElementById('pub-next').onclick=function(){goP(pubIdx+1);};
-    dots.forEach(function(d,i){d.onclick=function(){goP(i);};});
-    setInterval(function(){goP(pubIdx+1);},4000);
-  })();
-  </script>
 </section>
 
 <!-- WIDGETS -->
 <section class="ccr-section" style="background: rgba(42,28,184,0.2);">
   <div class="ccr-container">
     <div class="ccr-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-      <!-- CLIMA -->
       <div id="widget-clima" class="ccr-glass" style="min-height: 200px; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px dashed #fffb00; box-shadow: 0 4px 20px rgba(255,251,0,0.1);">
         <div style="text-align: center;">
           <h3 style="margin-bottom: 15px; color: #fffb00; text-shadow: 0 0 15px rgba(255,251,0,0.3);">Clima en Barranquilla</h3>
@@ -605,55 +391,26 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
           </div>
         </div>
       </div>
-      
-      <!-- REDES SOCIALES -->
-      <div class="ccr-glass" style="min-height: 200px; padding: 20px; display: flex; flex-direction: column; border: 1px dashed #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
-        <h3 style="margin-bottom: 15px; color: #ff4444; text-align: center; text-shadow: 0 0 15px rgba(255,0,0,0.3);">Síguenos</h3>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <a href="https://www.tiktok.com/@colorcariberadio/" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none; padding: 8px 12px; background: rgba(14,4,80,0.5); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
-            <span style="font-size: 1.2rem;">🎵</span>
-            <span style="color: white; font-size: 0.85rem; font-weight: 600;">TikTok</span>
-            <span style="color: #b8b0e8; font-size: 0.75rem; margin-left: auto;">@colorcariberadio</span>
-          </a>
-          <a href="https://www.facebook.com/humberto.consuegra.5" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none; padding: 8px 12px; background: rgba(14,4,80,0.5); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
-            <span style="font-size: 1.2rem;">📘</span>
-            <span style="color: white; font-size: 0.85rem; font-weight: 600;">Facebook</span>
-          </a>
-          <a href="https://www.instagram.com/colorcariberadio/" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none; padding: 8px 12px; background: rgba(14,4,80,0.5); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
-            <span style="font-size: 1.2rem;">📸</span>
-            <span style="color: white; font-size: 0.85rem; font-weight: 600;">Instagram</span>
-            <span style="color: #b8b0e8; font-size: 0.75rem; margin-left: auto;">@colorcariberadio</span>
-          </a>
-          <a href="https://twitter.com/BetoConComunica" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none; padding: 8px 12px; background: rgba(14,4,80,0.5); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
-            <span style="font-size: 1.2rem;">🐦</span>
-            <span style="color: white; font-size: 0.85rem; font-weight: 600;">Twitter / X</span>
-            <span style="color: #b8b0e8; font-size: 0.75rem; margin-left: auto;">@BetoConComunica</span>
-          </a>
-          <a href="https://www.youtube.com/@Colorcariberadio" target="_blank" style="display: flex; align-items: center; gap: 10px; text-decoration: none; padding: 8px 12px; background: rgba(14,4,80,0.5); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
-            <span style="font-size: 1.2rem;">▶️</span>
-            <span style="color: white; font-size: 0.85rem; font-weight: 600;">YouTube</span>
-            <span style="color: #b8b0e8; font-size: 0.75rem; margin-left: auto;">@Colorcariberadio</span>
-          </a>
+      <div id="widget-chat" class="ccr-glass" style="min-height: 200px; padding: 20px; display: flex; flex-direction: column; border: 1px dashed #ff0000; box-shadow: 0 4px 20px rgba(255,0,0,0.1);">
+        <h3 style="margin-bottom: 15px; color: #ff4444; text-align: center; text-shadow: 0 0 15px rgba(255,0,0,0.3);">Chat en Vivo</h3>
+        <div id="chat-messages" style="flex-grow: 1; overflow-y: auto; max-height: 120px; margin-bottom: 10px; padding: 10px; background: rgba(14,4,80,0.5); border-radius: 8px; border: 1px solid rgba(107,92,231,0.2);">
+          <div style="margin-bottom: 8px; font-size: 0.85rem;"><strong style="color: #fffb00;">Usuario1:</strong> <span style="color: #b8b0e8;">¡Qué buena música!</span></div>
+          <div style="margin-bottom: 8px; font-size: 0.85rem;"><strong style="color: #ff4444;">DJ Caribe:</strong> <span style="color: #b8b0e8;">¡Gracias por sintonizar!</span></div>
+          <div style="margin-bottom: 8px; font-size: 0.85rem;"><strong style="color: #6b5ce7;">Fanático:</strong> <span style="color: #b8b0e8;">¿Cuál es la siguiente canción?</span></div>
+        </div>
+        <div style="display: flex;">
+          <input type="text" placeholder="Escribe tu mensaje..." style="flex-grow: 1; padding: 8px; background: rgba(14,4,80,0.5); border: 1px solid rgba(107,92,231,0.4); border-radius: 8px; color: white; font-size: 0.85rem; outline: none;" />
+          <button class="ccr-btn ccr-btn-primary" style="padding: 8px 12px; margin-left: 5px; font-size: 0.8rem;">Enviar</button>
         </div>
       </div>
-
-      <!-- FACEBOOK -->
       <div id="widget-facebook" class="ccr-glass" style="min-height: 200px; padding: 20px; display: flex; flex-direction: column; border: 1px dashed #6b5ce7; box-shadow: 0 4px 20px rgba(107,92,231,0.15);">
-        <h3 style="margin-bottom: 15px; color: #6b5ce7; text-align: center; text-shadow: 0 0 15px rgba(107,92,231,0.3);">Facebook</h3>
-        <div style="flex-grow: 1; background: rgba(14,4,80,0.5); border-radius: 8px; padding: 15px; font-size: 0.85rem; border: 1px solid rgba(107,92,231,0.2);">
-          <div style="display: flex; align-items: center; margin-bottom: 15px;">
-            <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #2a1cb8, #4f3de0); display: flex; align-items: center; justify-content: center; margin-right: 10px; color: white; font-weight: 800;">f</div>
-            <div>
-              <div style="font-weight: bold; color: white;">Color Caribe Radio</div>
-              <div style="font-size: 0.7rem; color: #b8b0e8;">Just now</div>
-            </div>
-          </div>
-          <p style="margin-bottom: 15px; color: #b8b0e8;">¡Escucha nuestra transmisión en vivo ahora mismo! 🎶🌴 #ColorCaribe #RadioEnVivo</p>
-          <div style="display: flex; justify-content: space-around; text-align: center;">
-            <div><div style="font-weight: bold; color: #ff4444;">1.2K</div><div style="font-size: 0.7rem; color: #b8b0e8;">Likes</div></div>
-            <div><div style="font-weight: bold; color: #fffb00;">856</div><div style="font-size: 0.7rem; color: #b8b0e8;">Shares</div></div>
-            <div><div style="font-weight: bold; color: #6b5ce7;">324</div><div style="font-size: 0.7rem; color: #b8b0e8;">Comments</div></div>
-          </div>
+        <h3 style="margin-bottom: 15px; color: #6b5ce7; text-align: center; text-shadow: 0 0 15px rgba(107,92,231,0.3);">Síguenos</h3>
+        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 10px; justify-content: center;">
+          <a href="https://www.tiktok.com/@colorcariberadio/" target="_blank" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:8px 12px;background:rgba(14,4,80,0.5);border-radius:10px;border:1px solid rgba(107,92,231,0.3);transition:var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(107,92,231,0.3)'"><span style="font-size:1.2rem;">🎵</span><span style="color:white;font-size:0.85rem;font-weight:600;">TikTok</span><span style="color:#b8b0e8;font-size:0.75rem;margin-left:auto;">@colorcariberadio</span></a>
+          <a href="https://www.facebook.com/humberto.consuegra.5" target="_blank" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:8px 12px;background:rgba(14,4,80,0.5);border-radius:10px;border:1px solid rgba(107,92,231,0.3);transition:var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(107,92,231,0.3)'"><span style="font-size:1.2rem;">📘</span><span style="color:white;font-size:0.85rem;font-weight:600;">Facebook</span><span style="color:#b8b0e8;font-size:0.75rem;margin-left:auto;">Color Caribe</span></a>
+          <a href="https://www.instagram.com/colorcariberadio/" target="_blank" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:8px 12px;background:rgba(14,4,80,0.5);border-radius:10px;border:1px solid rgba(107,92,231,0.3);transition:var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(107,92,231,0.3)'"><span style="font-size:1.2rem;">📸</span><span style="color:white;font-size:0.85rem;font-weight:600;">Instagram</span><span style="color:#b8b0e8;font-size:0.75rem;margin-left:auto;">@colorcariberadio</span></a>
+          <a href="https://twitter.com/BetoConComunica" target="_blank" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:8px 12px;background:rgba(14,4,80,0.5);border-radius:10px;border:1px solid rgba(107,92,231,0.3);transition:var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(107,92,231,0.3)'"><span style="font-size:1.2rem;">🐦</span><span style="color:white;font-size:0.85rem;font-weight:600;">Twitter / X</span><span style="color:#b8b0e8;font-size:0.75rem;margin-left:auto;">@BetoConComunica</span></a>
+          <a href="https://www.youtube.com/@Colorcariberadio" target="_blank" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:8px 12px;background:rgba(14,4,80,0.5);border-radius:10px;border:1px solid rgba(107,92,231,0.3);transition:var(--transition);" onmouseover="this.style.borderColor='#fffb00'" onmouseout="this.style.borderColor='rgba(107,92,231,0.3)'"><span style="font-size:1.2rem;">▶️</span><span style="color:white;font-size:0.85rem;font-weight:600;">YouTube</span><span style="color:#b8b0e8;font-size:0.75rem;margin-left:auto;">Color Caribe</span></a>
         </div>
       </div>
     </div>
@@ -669,12 +426,12 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
         <p style="margin-bottom: 20px; color: #b8b0e8; font-size: 0.9rem;">¿Quieres anunciar con nosotros o enviar un saludo? Estamos a un clic.</p>
         <div style="display: flex; flex-direction: column; gap: 15px;">
           <a href="https://wa.me/573017075161" target="_blank" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-            <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #25d366, #128c4e); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.9rem; box-shadow: 0 2px 10px rgba(37,211,102,0.3);">W</div>
+            <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #25d366, #128c7e); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; box-shadow: 0 2px 10px rgba(37,211,102,0.3);">W</div>
             <span style="font-size: 0.9rem; color: white;">+57 301 707 5161</span>
           </a>
-          <a href="/cdn-cgi/l/email-protection#eb8884878499888a9982898e998a8fDcJHrrHSgvFpsYxqb6g97uaQTd2kE31rPUeDZTeDsjVq" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+          <a href="mailto:colorcariberadioonline.com@gmail.com" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
             <div style="width: 35px; height: 35px; background: linear-gradient(135deg, #fffb00, #e6e200); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #0e0450; font-size: 0.9rem; font-weight: 800; box-shadow: 0 2px 10px rgba(255,251,0,0.3);">E</div>
-            <span style="font-size: 0.9rem; color: white;"><span class="__cf_email__" data-cfemail="dcbfb3b0b3aebfbdaeb5beb9aebdb8b5b3b3b2b0b5b2b9f2bfb3b19cbbb1bdb5b0f2bfb3b1">[email&#160;protected]</span></span>
+            <span style="font-size: 0.85rem; color: white;">colorcariberadioonline.com@gmail.com</span>
           </a>
         </div>
       </div>
@@ -687,22 +444,13 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     </div>
   </div>
   <style>
-    @media (min-width: 768px) {
-      #contacto .ccr-glass { padding: 50px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
-      #contacto .ccr-title { font-size: 2.5rem; }
-      #contacto p { margin-bottom: 30px; font-size: 1rem; }
-      #contacto form { gap: 15px; }
-      #contacto input, #contacto textarea { padding: 15px; border-radius: 12px; font-size: 1rem; }
-      #contacto button { padding: 12px 28px; }
-    }
+    @media (min-width: 768px) { #contacto .ccr-glass { padding: 50px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; } #contacto .ccr-title { font-size: 2.5rem; } #contacto p { margin-bottom: 30px; font-size: 1rem; } #contacto form { gap: 15px; } #contacto input, #contacto textarea { padding: 15px; border-radius: 12px; font-size: 1rem; } #contacto button { padding: 12px 28px; } }
     #contacto input:focus, #contacto textarea:focus { border-color: #6b5ce7; box-shadow: 0 0 15px rgba(107,92,231,0.3); }
   </style>
 </section>
 
 <!-- BOTÓN FLOTANTE WHATSAPP -->
-<a href="https://wa.me/573017075161" target="_blank" style="position: fixed; bottom: 100px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 20px rgba(37,211,102,0.3); z-index: 999; transition: var(--transition);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-  W
-</a>
+<a href="https://wa.me/573017075161" target="_blank" style="position: fixed; bottom: 100px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3), 0 0 20px rgba(37,211,102,0.3); z-index: 999; transition: var(--transition);" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">W</a>
 
 <!-- FOOTER -->
 <footer style="background: linear-gradient(180deg, rgba(14,4,80,0.8) 0%, #050220 100%); padding: 50px 0 80px; border-top: 3px solid #ff0000; box-shadow: 0 -4px 30px rgba(255,0,0,0.15);">
@@ -717,10 +465,12 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
   </div>
 </footer>
 
-<!-- REPRODUCTOR FIJO INFERIOR -->
+<!-- REPRODUCTOR FIJO INFERIOR - IDÉNTICO AL ORIGINAL -->
 <div id="ccr-player" class="ccr-glass" style="position: fixed; bottom: 0; left: 0; right: 0; height: 80px; z-index: 1001; padding: 0 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 0; border-top-left-radius: 20px; border-top-right-radius: 20px; box-shadow: 0 -4px 30px rgba(14,4,80,0.6), 0 -1px 0 rgba(255,0,0,0.5); border-top: 2px solid #ff0000; background: rgba(14, 4, 80, 0.7); backdrop-filter: blur(10px);">
   <div style="display: flex; align-items: center; gap: 10px; overflow: hidden; flex: 1;">
-    <button id="ccr-play-btn" style="width: 50px; height: 50px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.2rem; flex-shrink: 0; background: linear-gradient(135deg, #ff0000, #cc0000); color: white; box-shadow: 0 2px 15px rgba(255,0,0,0.4), 0 0 30px rgba(255,0,0,0.15);">▶</button>
+    <button id="ccr-play-btn" style="width: 50px; height: 50px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.2rem; flex-shrink: 0; background: linear-gradient(135deg, #ff0000, #cc0000); color: white; box-shadow: 0 2px 15px rgba(255,0,0,0.4), 0 0 30px rgba(255,0,0,0.15);">
+      ▶
+    </button>
     <div style="overflow: hidden;">
       <p style="font-weight: 800; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; color: white;">COLOR CARIBE RADIO</p>
       <div style="display: flex; align-items: center;">
@@ -729,7 +479,6 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
       </div>
     </div>
   </div>
-  
   <div id="equalizer-container" style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100px; opacity: 0.9;">
     <div class="equalizer-bar" style="width: 4px; height: 10px; background: #ff0000; margin: 0 2px; border-radius: 2px;"></div>
     <div class="equalizer-bar" style="width: 4px; height: 15px; background: #fffb00; margin: 0 2px; border-radius: 2px;"></div>
@@ -739,20 +488,14 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     <div class="equalizer-bar" style="width: 4px; height: 15px; background: #4f3de0; margin: 0 2px; border-radius: 2px;"></div>
     <div class="equalizer-bar" style="width: 4px; height: 10px; background: #ff0000; margin: 0 2px; border-radius: 2px;"></div>
   </div>
-  
   <div style="display: flex; align-items: center; gap: 10px;">
     <div style="display: flex; align-items: center; background: rgba(255,0,0,0.2); padding: 5px 10px; border-radius: 15px; border: 1px solid rgba(255,0,0,0.4);">
       <span class="ccr-live-dot" style="background: #ff0000; animation: pulse-red 1.5s infinite;"></span>
       <span style="font-size: 0.7rem; font-weight: 800; color: #ff4444; text-transform: uppercase;">ON AIR</span>
     </div>
   </div>
-  
   <style>
-    @keyframes equalizer-animation {
-      0% { height: 10px; }
-      50% { height: 30px; }
-      100% { height: 10px; }
-    }
+    @keyframes equalizer-animation { 0% { height: 10px; } 50% { height: 30px; } 100% { height: 10px; } }
     .equalizer-bar { animation: equalizer-animation 1.2s infinite ease-in-out; }
     .equalizer-bar:nth-child(1) { animation-delay: 0s; }
     .equalizer-bar:nth-child(2) { animation-delay: 0.1s; }
@@ -761,17 +504,13 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
     .equalizer-bar:nth-child(5) { animation-delay: 0.4s; }
     .equalizer-bar:nth-child(6) { animation-delay: 0.5s; }
     .equalizer-bar:nth-child(7) { animation-delay: 0.6s; }
-    @media (max-width: 768px) {
-      .slider-controls { bottom: 15px; }
-      .slider-dot { width: 10px; height: 10px; }
-    }
+    @media (max-width: 768px) { .slider-controls { bottom: 15px; } .slider-dot { width: 10px; height: 10px; } }
   </style>
 </div>
 
-<!-- JS GLOBAL -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<!-- JS GLOBAL - IDÉNTICO AL ORIGINAL QUE FUNCIONA -->
+<script id="ccr-global-js">
 document.addEventListener('DOMContentLoaded', () => {
-  // Player
   const playBtn = document.getElementById('ccr-play-btn');
   const listenButton = document.getElementById('listen-button');
   const listenLiveButton = document.getElementById('listen-live-button');
@@ -785,13 +524,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function togglePlayback() {
     isPlaying = !isPlaying;
-    if (isPlaying) {
+    
+    if(isPlaying) {
       playBtn.innerHTML = '⏸';
       playBtn.style.background = 'linear-gradient(135deg, #fffb00, #e6e200)';
       playBtn.style.color = '#0e0450';
       playBtn.style.boxShadow = '0 2px 15px rgba(255,251,0,0.5), 0 0 30px rgba(255,251,0,0.2)';
       liveIndicator.classList.add('active');
-      document.querySelectorAll('.equalizer-bar').forEach(bar => bar.style.animationPlayState = 'running');
+      document.querySelectorAll('.equalizer-bar').forEach(bar => { bar.style.animationPlayState = 'running'; });
       audio.play().catch(e => console.log("Error al reproducir:", e));
     } else {
       playBtn.innerHTML = '▶';
@@ -799,30 +539,42 @@ document.addEventListener('DOMContentLoaded', () => {
       playBtn.style.color = 'white';
       playBtn.style.boxShadow = '0 2px 15px rgba(255,0,0,0.4), 0 0 30px rgba(255,0,0,0.15)';
       liveIndicator.classList.remove('active');
-      document.querySelectorAll('.equalizer-bar').forEach(bar => bar.style.animationPlayState = 'paused');
+      document.querySelectorAll('.equalizer-bar').forEach(bar => { bar.style.animationPlayState = 'paused'; });
       audio.pause();
     }
   }
   
   playBtn.addEventListener('click', togglePlayback);
-  listenButton.addEventListener('click', e => { e.preventDefault(); togglePlayback(); });
-  listenLiveButton.addEventListener('click', e => { e.preventDefault(); togglePlayback(); });
+  listenButton.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
+  listenLiveButton.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
 
   // Tabs programación
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
-  
-  tabBtns.forEach(btn => {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const target = btn.dataset.tab;
-      tabBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       btn.classList.add('active');
-      document.getElementById('tab-' + target).classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
     });
   });
-  
-  // Slider
+
+  // Slider publicidad
+  var pubIdx = 0, pubTotal = 4;
+  var pubWrap = document.getElementById('pub-slider-wrapper');
+  var pubDots = document.querySelectorAll('.pub-dot');
+  function goP(i) {
+    if(i >= pubTotal) i = 0;
+    if(i < 0) i = pubTotal - 1;
+    pubIdx = i;
+    pubWrap.style.transform = 'translateX(-' + (pubIdx * 100) + '%)';
+    pubDots.forEach(function(d, j) { d.style.background = j === pubIdx ? '#ff0000' : 'rgba(255,255,255,0.3)'; });
+  }
+  document.getElementById('pub-prev').onclick = function() { goP(pubIdx - 1); };
+  document.getElementById('pub-next').onclick = function() { goP(pubIdx + 1); };
+  pubDots.forEach(function(d, i) { d.onclick = function() { goP(i); }; });
+  setInterval(function() { goP(pubIdx + 1); }, 4000);
+
+  // Slider hero
   const sliderWrapper = document.querySelector('.slider-wrapper');
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.slider-dot');
@@ -848,21 +600,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  setInterval(() => goToSlide(currentIndex + 1), 5000);
-  dots.forEach((dot, index) => dot.addEventListener('click', () => goToSlide(index)));
+  setInterval(() => { goToSlide(currentIndex + 1); }, 5000);
+  dots.forEach((dot, index) => { dot.addEventListener('click', () => { goToSlide(index); }); });
   
-  // Scroll suave
+  // Scroll Suave
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      if(target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
   
-  // Animación de aparición
+  // Animación suave de aparición al scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translat</script></!doctype>
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.ccr-glass').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'all 0.6s ease-out';
+    observer.observe(el);
+  });
+});
+</script>
