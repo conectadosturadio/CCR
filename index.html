@@ -20,8 +20,8 @@ body {
 }
 body::before {
   content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background-image: radial-gradient(circle at 10% 20%, rgba(79,61,224,0.3) 0.5px, transparent 1px), radial-gradient(circle at 80% 70%, rgba(255,0,0,0.15) 0.5px, transparent 1px), radial-gradient(circle at 30% 90%, rgba(255,251,0,0.12) 0.5px, transparent 1px);
-  background-size: 100px 100px, 150px 150px, 120px 120px; z-index: -1; pointer-events: none;
+  background-image: radial-gradient(circle at 10% 20%, rgba(79,61,224,0.3) 0.5px, transparent 1px), radial-gradient(circle at 80% 70%, rgba(255,0,0,0.15) 0.5px, transparent 1px);
+  background-size: 100px 100px, 150px 150px; z-index: -1; pointer-events: none;
 }
 .ccr-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 .ccr-section { padding: 60px 0; }
@@ -53,7 +53,6 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
   .ccr-grid { grid-template-columns: 1fr; }
   .ccr-container { padding: 0 15px; }
   .tab-content.active { grid-template-columns: 1fr; }
-  nav { gap: 10px !important; }
   nav a { font-size: 0.75rem !important; }
 }
 @media (max-width: 480px) {
@@ -295,30 +294,29 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
   </div>
 </section>
 
-<!-- CONTACTO -->
+<!-- CONTACTO - RESPONSIVE -->
 <section id="contacto" class="ccr-section">
   <div class="ccr-container">
-    <div class="ccr-glass" style="padding:30px;display:grid;grid-template-columns:1fr;gap:30px;border:1px solid rgba(255,0,0,0.3);">
-      <div>
-        <h2 class="ccr-title">Contáctanos</h2>
-        <p style="margin-bottom:20px;color:#b8b0e8;font-size:0.9rem;">¿Quieres anunciar con nosotros o enviar un saludo?</p>
-        <div style="display:flex;flex-direction:column;gap:15px;">
-          <a href="https://wa.me/573017075161" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-            <div style="width:35px;height:35px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;">W</div>
-            <span style="color:white;">+57 301 707 5161</span>
-          </a>
-          <a href="mailto:colorcariberadioonline.com@gmail.com" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-            <div style="width:35px;height:35px;background:linear-gradient(135deg,#fffb00,#e6e200);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#0e0450;font-weight:800;">E</div>
-            <span style="font-size:0.85rem;color:white;">colorcariberadioonline.com@gmail.com</span>
-          </a>
-        </div>
+    <div class="ccr-glass" style="padding:25px;border:1px solid rgba(255,0,0,0.3);">
+      <h2 class="ccr-title">Contáctanos</h2>
+      <p style="margin-bottom:20px;color:#b8b0e8;font-size:0.9rem;">¿Quieres anunciar con nosotros o enviar un saludo?</p>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:28px;">
+        <a href="https://wa.me/573017075161" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;background:rgba(37,211,102,0.1);padding:12px;border-radius:10px;border:1px solid rgba(37,211,102,0.3);">
+          <div style="width:38px;height:38px;min-width:38px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;">W</div>
+          <div><div style="color:#25d366;font-size:0.7rem;font-weight:700;">WHATSAPP</div><span style="color:white;font-size:0.9rem;">+57 301 707 5161</span></div>
+        </a>
+        <a href="mailto:colorcariberadioonline.com@gmail.com" style="display:flex;align-items:center;gap:12px;text-decoration:none;background:rgba(255,251,0,0.08);padding:12px;border-radius:10px;border:1px solid rgba(255,251,0,0.2);">
+          <div style="width:38px;height:38px;min-width:38px;background:linear-gradient(135deg,#fffb00,#e6e200);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#0e0450;font-weight:800;">@</div>
+          <div><div style="color:#fffb00;font-size:0.7rem;font-weight:700;">EMAIL</div><span style="color:white;font-size:0.78rem;word-break:break-all;">colorcariberadioonline.com@gmail.com</span></div>
+        </a>
       </div>
-      <form style="display:flex;flex-direction:column;gap:12px;">
-        <input type="text" placeholder="Tu Nombre" style="background:rgba(14,4,80,0.5);border:1px solid rgba(107,92,231,0.4);padding:12px;border-radius:10px;color:white;outline:none;font-size:0.9rem;" />
-        <input type="email" placeholder="Tu Email" style="background:rgba(14,4,80,0.5);border:1px solid rgba(255,0,0,0.3);padding:12px;border-radius:10px;color:white;outline:none;font-size:0.9rem;" />
-        <textarea placeholder="Mensaje" rows="4" style="background:rgba(14,4,80,0.5);border:1px solid rgba(255,251,0,0.3);padding:12px;border-radius:10px;color:white;outline:none;font-size:0.9rem;"></textarea>
-        <button type="submit" class="ccr-btn ccr-btn-primary" style="justify-content:center;padding:12px;">ENVIAR MENSAJE</button>
-      </form>
+      <div style="border-top:1px solid rgba(107,92,231,0.3);padding-top:20px;display:flex;flex-direction:column;gap:12px;">
+        <h3 style="color:#6b5ce7;font-size:1rem;margin-bottom:5px;">Envíanos un mensaje</h3>
+        <input type="text" placeholder="Tu Nombre" style="width:100%;background:rgba(14,4,80,0.6);border:1px solid rgba(107,92,231,0.4);padding:12px 15px;border-radius:10px;color:white;outline:none;font-size:0.9rem;font-family:inherit;" />
+        <input type="email" placeholder="Tu Email" style="width:100%;background:rgba(14,4,80,0.6);border:1px solid rgba(255,0,0,0.3);padding:12px 15px;border-radius:10px;color:white;outline:none;font-size:0.9rem;font-family:inherit;" />
+        <textarea placeholder="Tu mensaje..." rows="4" style="width:100%;background:rgba(14,4,80,0.6);border:1px solid rgba(255,251,0,0.3);padding:12px 15px;border-radius:10px;color:white;outline:none;font-size:0.9rem;font-family:inherit;resize:vertical;"></textarea>
+        <button type="button" class="ccr-btn ccr-btn-primary" style="width:100%;justify-content:center;padding:14px;font-size:0.95rem;">📨 ENVIAR MENSAJE</button>
+      </div>
     </div>
   </div>
 </section>
@@ -340,9 +338,9 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
 </footer>
 
 <!-- REPRODUCTOR -->
-<div id="ccr-player" class="ccr-glass" style="position:fixed;bottom:0;left:0;right:0;height:80px;z-index:1001;padding:0 15px;display:flex;align-items:center;justify-content:space-between;border-radius:0;border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 -4px 30px rgba(14,4,80,0.6),0 -1px 0 rgba(255,0,0,0.5);border-top:2px solid #ff0000;background:rgba(14,4,80,0.7);backdrop-filter:blur(10px);">
+<div id="ccr-player" class="ccr-glass" style="position:fixed;bottom:0;left:0;right:0;height:80px;z-index:1001;padding:0 15px;display:flex;align-items:center;justify-content:space-between;border-radius:0;border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 -4px 30px rgba(14,4,80,0.6);border-top:2px solid #ff0000;background:rgba(14,4,80,0.7);backdrop-filter:blur(10px);">
   <div style="display:flex;align-items:center;gap:10px;overflow:hidden;flex:1;">
-    <button id="ccr-play-btn" style="width:50px;height:50px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;flex-shrink:0;background:linear-gradient(135deg,#ff0000,#cc0000);color:white;box-shadow:0 2px 15px rgba(255,0,0,0.4),0 0 30px rgba(255,0,0,0.15);">▶</button>
+    <button id="ccr-play-btn" style="width:50px;height:50px;border-radius:50%;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;flex-shrink:0;background:linear-gradient(135deg,#ff0000,#cc0000);color:white;box-shadow:0 2px 15px rgba(255,0,0,0.4);">▶</button>
     <div style="overflow:hidden;">
       <p style="font-weight:800;font-size:0.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0;color:white;">COLOR CARIBE RADIO</p>
       <div style="display:flex;align-items:center;">
@@ -351,7 +349,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
       </div>
     </div>
   </div>
-  <div style="display:flex;align-items:center;justify-content:center;height:100%;width:100px;opacity:0.9;">
+  <div style="display:flex;align-items:center;justify-content:center;height:100%;width:80px;">
     <div class="equalizer-bar" style="width:4px;height:10px;background:#ff0000;margin:0 2px;border-radius:2px;"></div>
     <div class="equalizer-bar" style="width:4px;height:15px;background:#fffb00;margin:0 2px;border-radius:2px;"></div>
     <div class="equalizer-bar" style="width:4px;height:25px;background:#4f3de0;margin:0 2px;border-radius:2px;"></div>
@@ -367,15 +365,15 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercas
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const playBtn = document.getElementById('ccr-play-btn');
-  const listenButton = document.getElementById('listen-button');
-  const listenLiveButton = document.getElementById('listen-live-button');
-  const liveIndicator = document.getElementById('live-indicator');
-  let isPlaying = false;
+document.addEventListener('DOMContentLoaded', function() {
+  var playBtn = document.getElementById('ccr-play-btn');
+  var listenButton = document.getElementById('listen-button');
+  var listenLiveButton = document.getElementById('listen-live-button');
+  var liveIndicator = document.getElementById('live-indicator');
+  var isPlaying = false;
 
-  const streamUrl = "https://stream-152.zeno.fm/sqfetz0whrhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJzcWZldHowd2hyaHZ2IiwiaG9zdCI6InN0cmVhbS0xNTIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ii01X3cxRDVVUmEyVHNYM21Ka090bnciLCJpYXQiOjE3NzExNDcxNDAsImV4cCI6MTc3MTE0NzIwMH0.Ga9Fpv-F4qMrg-a87yJMQVDpFj-YsSVv7FoiF8C2TKQ";
-  const audio = new Audio();
+  var streamUrl = "https://stream-152.zeno.fm/sqfetz0whrhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJzcWZldHowd2hyaHZ2IiwiaG9zdCI6InN0cmVhbS0xNTIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ii01X3cxRDVVUmEyVHNYM21Ka090bnciLCJpYXQiOjE3NzExNDcxNDAsImV4cCI6MTc3MTE0NzIwMH0.Ga9Fpv-F4qMrg-a87yJMQVDpFj-YsSVv7FoiF8C2TKQ";
+  var audio = new Audio();
   audio.src = streamUrl;
   audio.crossOrigin = "anonymous";
 
@@ -385,30 +383,28 @@ document.addEventListener('DOMContentLoaded', () => {
       playBtn.innerHTML = '⏸';
       playBtn.style.background = 'linear-gradient(135deg, #fffb00, #e6e200)';
       playBtn.style.color = '#0e0450';
-      playBtn.style.boxShadow = '0 2px 15px rgba(255,251,0,0.5), 0 0 30px rgba(255,251,0,0.2)';
       liveIndicator.classList.add('active');
-      document.querySelectorAll('.equalizer-bar').forEach(bar => { bar.style.animationPlayState = 'running'; });
-      audio.play().catch(e => console.log("Error al reproducir:", e));
+      document.querySelectorAll('.equalizer-bar').forEach(function(bar) { bar.style.animationPlayState = 'running'; });
+      audio.play().catch(function(e) { console.log("Error:", e); });
     } else {
       playBtn.innerHTML = '▶';
       playBtn.style.background = 'linear-gradient(135deg, #ff0000, #cc0000)';
       playBtn.style.color = 'white';
-      playBtn.style.boxShadow = '0 2px 15px rgba(255,0,0,0.4), 0 0 30px rgba(255,0,0,0.15)';
       liveIndicator.classList.remove('active');
-      document.querySelectorAll('.equalizer-bar').forEach(bar => { bar.style.animationPlayState = 'paused'; });
+      document.querySelectorAll('.equalizer-bar').forEach(function(bar) { bar.style.animationPlayState = 'paused'; });
       audio.pause();
     }
   }
 
   playBtn.addEventListener('click', togglePlayback);
-  listenButton.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
-  listenLiveButton.addEventListener('click', (e) => { e.preventDefault(); togglePlayback(); });
+  listenButton.addEventListener('click', function(e) { e.preventDefault(); togglePlayback(); });
+  listenLiveButton.addEventListener('click', function(e) { e.preventDefault(); togglePlayback(); });
 
   // Tabs
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+      document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
       btn.classList.add('active');
       document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
     });
@@ -431,41 +427,40 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(function() { goP(pubIdx + 1); }, 4000);
 
   // Slider hero
-  const sliderWrapper = document.querySelector('.slider-wrapper');
-  const dots = document.querySelectorAll('.slider-dot');
-  let currentIndex = 0;
-  const slideCount = document.querySelectorAll('.slide').length;
-  const dotColors = ['#ff0000', '#fffb00', '#6b5ce7', '#ff0000', '#fffb00', '#6b5ce7'];
-
+  var sliderWrapper = document.querySelector('.slider-wrapper');
+  var dots = document.querySelectorAll('.slider-dot');
+  var currentIndex = 0;
+  var slideCount = document.querySelectorAll('.slide').length;
+  var dotColors = ['#ff0000', '#fffb00', '#6b5ce7', '#ff0000', '#fffb00', '#6b5ce7'];
   function goToSlide(index) {
     if (index >= slideCount) index = 0;
     if (index < 0) index = slideCount - 1;
     sliderWrapper.style.transform = 'translateX(-' + (index * 100) + '%)';
     currentIndex = index;
-    dots.forEach((dot, i) => {
+    dots.forEach(function(dot, i) {
       if (i === currentIndex) { dot.style.background = dotColors[i]; dot.style.borderColor = dotColors[i]; dot.style.boxShadow = '0 0 10px ' + dotColors[i]; }
       else { dot.style.background = 'rgba(107,92,231,0.5)'; dot.style.borderColor = 'rgba(107,92,231,0.3)'; dot.style.boxShadow = 'none'; }
     });
   }
-  setInterval(() => { goToSlide(currentIndex + 1); }, 5000);
-  dots.forEach((dot, index) => { dot.addEventListener('click', () => { goToSlide(index); }); });
+  setInterval(function() { goToSlide(currentIndex + 1); }, 5000);
+  dots.forEach(function(dot, index) { dot.addEventListener('click', function() { goToSlide(index); }); });
 
   // Scroll suave
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      var target = document.querySelector(this.getAttribute('href'));
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
   // Animación scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
       if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }
     });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.ccr-glass').forEach(el => {
+  document.querySelectorAll('.ccr-glass').forEach(function(el) {
     el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; el.style.transition = 'all 0.6s ease-out';
     observer.observe(el);
   });
